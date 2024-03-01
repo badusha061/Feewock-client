@@ -92,7 +92,7 @@ function Navbar() {
     };
 
     if(userId){
-      const client = new W3CWebSocket(`ws://localhost:8001/ws/notificationuser/${userId}/`) 
+      const client = new W3CWebSocket(`ws://api.feewock.online/ws/notificationuser/${userId}/`) 
       client.addEventListener('open', handleOpen);
       client.addEventListener('message', handleMessage);
   
