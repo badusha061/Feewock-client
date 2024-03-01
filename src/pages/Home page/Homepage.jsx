@@ -45,6 +45,11 @@ function Homepage() {
           },
         },],};
 
+      console.log(BASE_URL,'!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11');
+      console.log(BASE_URL,'!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11');
+      console.log(BASE_URL,'!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11');
+      console.log(BASE_URL,'!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11');
+
  
 
     const [banner , setBanner] = useState([])
