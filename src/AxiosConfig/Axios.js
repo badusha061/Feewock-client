@@ -7,10 +7,11 @@ import { jwtDecode } from 'jwt-decode';
 const BASE_URL = import.meta.env.VITE_REACT_APP_BASE_URL;
 const useAxios = () => {
   const access_token =  localStorage.getItem("access_token")
-  const axiosInstance = axios.create({
-    baseURL: BASE_URL,
-    headers: { Authorization: `Bearer ${access_token}` }
- });
+    const axiosInstance = axios.create({
+      baseURL: BASE_URL,
+      withCredentials: true,
+      headers: { Authorization: `Bearer ${access_token}` }
+  });
 
 
  
