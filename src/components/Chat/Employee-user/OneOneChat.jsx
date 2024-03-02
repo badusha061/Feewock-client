@@ -138,7 +138,9 @@ function OneOneChat() {
             
             
             client.onerror = (error) => {
-                console.error('WebSocket error:', error);
+                console.error('WebSocket error:', error.message);
+                console.error('WebSocket error:', error.message);
+
             };
             client.onclose = () => {
                 console.log('WebSocket client disconnected');
