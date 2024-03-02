@@ -113,7 +113,7 @@ function OneOneChat() {
     }
 
 
-    const client = new W3CWebSocket(`ws://api.feewock.online/ws/chat/${sender}_${receiver}/`) 
+    const client = new W3CWebSocket(`wss://api.feewock.online/ws/chat/${sender}_${receiver}/`) 
 
    useEffect(() => {
         GetMessage()
