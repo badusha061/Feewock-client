@@ -61,7 +61,7 @@ function EmployeesNavbar() {
       let [open, setOpen] = useState(false);
 
 
-      const client = new W3CWebSocket(`wss://localhost:8001/notification/${EmployeeId}/`) 
+      const client = new W3CWebSocket(`wss://feewock.online/api/notification/${EmployeeId}/`) 
       useEffect(() => {
         const handleMessage = (event) => {    
           const data = JSON.parse(event.data);
